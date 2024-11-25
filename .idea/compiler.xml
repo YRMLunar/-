@@ -2,22 +2,24 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="xuecheng-plus" />
-        <module name="xuecheng-plus-content-api" />
       </profile>
       <profile name="Annotation profile for xuecheng-plus-content" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
         </processorPath>
-        <module name="xuecheng-plus-content-model" />
         <module name="xuecheng-plus-content-service" />
+        <module name="xuecheng-plus-content-api" />
+        <module name="xuecheng-plus-content-model" />
+        <module name="xuecheng-plus-generator" />
         <module name="xuecheng-plus-base" />
       </profile>
     </annotationProcessing>
@@ -27,7 +29,7 @@
       <module name="xuecheng-plus" options="-parameters" />
       <module name="xuecheng-plus-base" options="" />
       <module name="xuecheng-plus-content" options="" />
-      <module name="xuecheng-plus-content-api" options="-parameters" />
+      <module name="xuecheng-plus-content-api" options="" />
       <module name="xuecheng-plus-content-model" options="" />
       <module name="xuecheng-plus-content-service" options="" />
       <module name="xuecheng-plus-parent" options="" />

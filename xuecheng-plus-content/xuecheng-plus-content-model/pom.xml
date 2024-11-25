@@ -8,14 +8,34 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>xuecheng-plus-content-model</artifactId>
+<dependencies>
+    <dependency>
+        <groupId>com.xuecheng</groupId>
+        <artifactId>xuecheng-plus-base</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <!--存在mybatisplus注解添加相关注解保证不报错-->
+    <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-annotation</artifactId>
+        <version>${mybatis-plus-boot-starter.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-core</artifactId>
+        <version>${mybatis-plus-boot-starter.version}</version>
+    </dependency>
 
-
-    <dependencies>
-        <dependency>
-            <groupId>com.xuecheng</groupId>
-            <artifactId>xuecheng-plus-base</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
-
+    <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-schema</artifactId>
+        <version>3.0.0</version>
+        <scope>compile</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
 </project>
